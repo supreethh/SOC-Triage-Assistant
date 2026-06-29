@@ -1,0 +1,24 @@
+{
+  "Event": {
+    "System": {
+      "Provider": {
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "EventID": 4728,
+      "Level": 0,
+      "TimeCreated": {
+        "SystemTime": "2024-11-15T11:32:45.000Z"
+      },
+      "Computer": "DC01.corp.local"
+    },
+    "EventData": {
+      "TargetUserName": "Domain Admins",
+      "MemberName": "CORP\\temp_contractor_01",
+      "SubjectUserName": "temp_contractor_01",
+      "SubjectDomainName": "CORP",
+      "SubjectLogonId": "0x4A5C2",
+      "PrivilegeList": "-",
+      "Operation": "Member Added to Security-Enabled Global Group"
+    }
+  }
+}
