@@ -1,0 +1,150 @@
+[
+  {
+    "Event": {
+      "System": {
+        "Provider": {
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "EventID": 4625,
+        "Level": 0,
+        "TimeCreated": {
+          "SystemTime": "2024-11-15T02:34:21.000Z"
+        },
+        "Computer": "HR-WS01.corp.local"
+      },
+      "EventData": {
+        "TargetUserName": "john.doe",
+        "TargetDomainName": "CORP",
+        "LogonType": 3,
+        "IpAddress": "185.220.101.34",
+        "IpPort": "51244",
+        "FailureReason": "Unknown user name or bad password",
+        "Status": "0xC000006D",
+        "SubStatus": "0xC000006A",
+        "WorkstationName": "HR-WS01"
+      }
+    }
+  },
+  {
+    "Event": {
+      "System": {
+        "Provider": {
+          "Name": "Microsoft-Windows-Sysmon"
+        },
+        "EventID": 3,
+        "Level": 4,
+        "TimeCreated": {
+          "SystemTime": "2024-11-15T14:22:10.000Z"
+        },
+        "Computer": "FIN-WS02.corp.local"
+      },
+      "EventData": {
+        "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "User": "CORP\\sarah.jones",
+        "Protocol": "tcp",
+        "SourceIp": "192.168.1.102",
+        "SourcePort": "52341",
+        "DestinationIp": "91.195.240.117",
+        "DestinationPort": 4444,
+        "Initiated": "true"
+      }
+    }
+  },
+  {
+    "Event": {
+      "System": {
+        "Provider": {
+          "Name": "Microsoft-Windows-Windows Defender"
+        },
+        "EventID": 1116,
+        "Level": 2,
+        "TimeCreated": {
+          "SystemTime": "2024-11-15T09:15:33.000Z"
+        },
+        "Computer": "MKT-LAPTOP07.corp.local"
+      },
+      "EventData": {
+        "ThreatName": "Trojan:Win32/Emotet",
+        "Severity": "High",
+        "Category": "Trojan",
+        "Action": "Quarantined",
+        "Path": "C:\\Users\\mike.chen\\Downloads\\invoice.pdf.exe",
+        "SHA256": "a1b2c3d4e5f67890123456789abcdef0123456789abcdef0123456789abcdef",
+        "User": "CORP\\mike.chen"
+      }
+    }
+  },
+  {
+    "Event": {
+      "System": {
+        "Provider": {
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "EventID": 4663,
+        "Level": 0,
+        "TimeCreated": {
+          "SystemTime": "2024-11-15T03:47:22.000Z"
+        },
+        "Computer": "FILESRV01.corp.local"
+      },
+      "EventData": {
+        "SubjectUserName": "robert.smith",
+        "SubjectDomainName": "CORP",
+        "ObjectName": "\\\\FILESRV01\\HR\\salary_data_2024.xlsx",
+        "AccessMask": "0x1",
+        "AccessList": "ReadData (or ListDirectory)",
+        "ProcessName": "C:\\Windows\\explorer.exe",
+        "IpAddress": "192.168.1.78"
+      }
+    }
+  },
+  {
+    "Event": {
+      "System": {
+        "Provider": {
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "EventID": 4728,
+        "Level": 0,
+        "TimeCreated": {
+          "SystemTime": "2024-11-15T11:32:45.000Z"
+        },
+        "Computer": "DC01.corp.local"
+      },
+      "EventData": {
+        "TargetUserName": "Domain Admins",
+        "MemberName": "CORP\\temp_contractor_01",
+        "SubjectUserName": "temp_contractor_01",
+        "SubjectDomainName": "CORP",
+        "SubjectLogonId": "0x4A5C2",
+        "PrivilegeList": "-",
+        "Operation": "Member Added to Security-Enabled Global Group"
+      }
+    }
+  },
+  {
+    "Event": {
+      "System": {
+        "Provider": {
+          "Name": "Microsoft-Windows-Security-Auditing"
+        },
+        "EventID": 5140,
+        "Level": 0,
+        "TimeCreated": {
+          "SystemTime": "2024-11-15T16:05:11.000Z"
+        },
+        "Computer": "FILESRV01.corp.local"
+      },
+      "EventData": {
+        "SubjectUserName": "john.doe",
+        "SubjectDomainName": "CORP",
+        "IpAddress": "192.168.1.45",
+        "ShareName": "\\\\FILESRV01\\ADMIN$",
+        "ShareLocalPath": "C:\\Windows",
+        "AccessMask": "0x1",
+        "AccessList": "ReadData (or ListDirectory)",
+        "ClientName": "HR-WS01"
+      }
+    }
+  }
+]
