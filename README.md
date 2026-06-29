@@ -36,7 +36,19 @@ Code Node
         ▼
 Google Sheets
 ```
+![Workflow](screenshots/workflow.png)
 
+---
+
+# Sample Output
+
+![Google Sheets](screenshots/google_sheets.png)
+
+---
+
+# AI Analysis
+
+![OpenAI Output](screenshots/openai_output.png)
 ---
 
 ## Technologies
