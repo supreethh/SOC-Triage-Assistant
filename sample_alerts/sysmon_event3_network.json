@@ -1,0 +1,25 @@
+{
+  "Event": {
+    "System": {
+      "Provider": {
+        "Name": "Microsoft-Windows-Sysmon"
+      },
+      "EventID": 3,
+      "Level": 4,
+      "TimeCreated": {
+        "SystemTime": "2024-11-15T14:22:10.000Z"
+      },
+      "Computer": "FIN-WS02.corp.local"
+    },
+    "EventData": {
+      "Image": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "User": "CORP\\sarah.jones",
+      "Protocol": "tcp",
+      "SourceIp": "192.168.1.102",
+      "SourcePort": "52341",
+      "DestinationIp": "91.195.240.117",
+      "DestinationPort": 4444,
+      "Initiated": "true"
+    }
+  }
+}
