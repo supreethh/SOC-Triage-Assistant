@@ -1,0 +1,24 @@
+{
+  "Event": {
+    "System": {
+      "Provider": {
+        "Name": "Microsoft-Windows-Security-Auditing"
+      },
+      "EventID": 4663,
+      "Level": 0,
+      "TimeCreated": {
+        "SystemTime": "2024-11-15T03:47:22.000Z"
+      },
+      "Computer": "FILESRV01.corp.local"
+    },
+    "EventData": {
+      "SubjectUserName": "robert.smith",
+      "SubjectDomainName": "CORP",
+      "ObjectName": "\\\\FILESRV01\\HR\\salary_data_2024.xlsx",
+      "AccessMask": "0x1",
+      "AccessList": "ReadData (or ListDirectory)",
+      "ProcessName": "C:\\Windows\\explorer.exe",
+      "IpAddress": "192.168.1.78"
+    }
+  }
+}
